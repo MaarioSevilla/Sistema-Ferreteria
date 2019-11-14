@@ -10,10 +10,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Felip
- */
 public class TablaAlmacen {
      public static void mostrarTabla(JTable tabla){
         DefaultTableModel modelo= new DefaultTableModel();

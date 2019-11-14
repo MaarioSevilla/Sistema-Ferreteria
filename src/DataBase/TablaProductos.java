@@ -11,10 +11,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Felip
- */
 public class TablaProductos {
     public static Connection on;
     public static void mostrarTabla(JTable tabla){
