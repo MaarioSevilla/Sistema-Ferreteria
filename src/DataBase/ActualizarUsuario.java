@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Database;
+package DataBase;
 
 /**
  *
  * @author sevilla
  */
-public class TablaAlmacen {
+public class ActualizarUsuario {
     
 }

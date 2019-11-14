@@ -9,14 +9,14 @@ package Clases;
  *
  * @author sevilla
  */
-public class Pedidos {
+public class Ventas {
     private int idProducto;
     private String descripcion;
     private String nomCliente;
     private String fecha;
     private int idUsuario;
 
-    public Pedidos() {
+    public Ventas() {
         idProducto=0;
         descripcion="";
         nomCliente="";
@@ -24,7 +24,7 @@ public class Pedidos {
         idUsuario=0;
     }
 
-    public Pedidos(int idProducto, String descripcion, String nomCliente, String fecha, int idUsuario) {
+    public Ventas(int idProducto, String descripcion, String nomCliente, String fecha, int idUsuario) {
         this.idProducto = idProducto;
         this.descripcion = descripcion;
         this.nomCliente = nomCliente;
