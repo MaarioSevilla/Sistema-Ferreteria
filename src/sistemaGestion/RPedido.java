@@ -16,6 +16,7 @@ public class RPedido extends javax.swing.JFrame {
      */
     public RPedido() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

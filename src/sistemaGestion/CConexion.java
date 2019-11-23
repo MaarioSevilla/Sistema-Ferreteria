@@ -19,7 +19,7 @@ public class CConexion {
         Connection conecta = null;
             try {
 		Class.forName("com.mysql.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:8889/CasaVieja";
+		String url = "jdbc:mysql://localhost:8889/ferreteria";
 		conecta=DriverManager.getConnection(url, "root", "root");                
                 //JOptionPane.showMessageDialog(null, "conexion exitosa");
 	    } catch (ClassNotFoundException | SQLException e){

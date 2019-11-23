@@ -66,7 +66,7 @@ public class JFAbout extends javax.swing.JFrame {
 
         jLabel6.setText("de los distribuidores");
 
-        jLabel7.setText("SSTechnology Todos los derechos reservados ");
+        jLabel7.setText("SvTechnology Todos los derechos reservados ");
 
         jLabel8.setText("El uso y renta total de los permisos quedan reservados por la empresa");
 

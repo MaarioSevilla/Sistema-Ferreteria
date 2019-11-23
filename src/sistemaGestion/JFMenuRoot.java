@@ -48,6 +48,7 @@ public class JFMenuRoot extends javax.swing.JFrame {
         fnsesion = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(880, 630));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -272,13 +273,13 @@ public class JFMenuRoot extends javax.swing.JFrame {
     }//GEN-LAST:event_NewUserActionPerformed
 
     private void RVentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RVentaMouseClicked
-        RVenta rv= new RVenta();
+        JFVenta rv= new JFVenta();
         rv.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_RVentaMouseClicked
 
     private void RVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RVentaActionPerformed
-        RVenta rv= new RVenta();
+        JFVenta rv= new JFVenta();
         rv.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_RVentaActionPerformed
