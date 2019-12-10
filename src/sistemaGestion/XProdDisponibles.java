@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sistemaGestion;
-
+import DataBase.TablaProductos;
 /**
  *
  * @author sevilla
@@ -16,6 +16,7 @@ public class XProdDisponibles extends javax.swing.JFrame {
      */
     public XProdDisponibles() {
         initComponents();
+        TablaProductos.mostrarTabla(jtProductos);
     }
 
     /**
@@ -28,7 +29,7 @@ public class XProdDisponibles extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtProductos = new javax.swing.JTable();
         RegistrarP = new javax.swing.JButton();
         Save = new javax.swing.JButton();
         Back = new javax.swing.JButton();
@@ -36,7 +37,7 @@ public class XProdDisponibles extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtProductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -55,7 +56,7 @@ public class XProdDisponibles extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtProductos);
 
         RegistrarP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/btnregistrar.png"))); // NOI18N
         RegistrarP.setBorderPainted(false);
@@ -196,6 +197,6 @@ public class XProdDisponibles extends javax.swing.JFrame {
     private javax.swing.JButton Save;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jtProductos;
     // End of variables declaration//GEN-END:variables
 }

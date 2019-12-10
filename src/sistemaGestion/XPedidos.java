@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sistemaGestion;
-
+import DataBase.TablaPedidos;
 /**
  *
  * @author sevilla
@@ -16,6 +16,7 @@ public class XPedidos extends javax.swing.JFrame {
      */
     public XPedidos() {
         initComponents();
+        TablaPedidos.mostrarTabla(jtPedidos);
     }
 
     /**
@@ -29,7 +30,7 @@ public class XPedidos extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtPedidos = new javax.swing.JTable();
         RegistrarP = new javax.swing.JButton();
         Save = new javax.swing.JButton();
         Back = new javax.swing.JButton();
@@ -37,7 +38,7 @@ public class XPedidos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtPedidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -48,7 +49,7 @@ public class XPedidos extends javax.swing.JFrame {
                 "ID Pedido", "ID Producto", "Descripcion", "Nombre del Cliente", "Entregado"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtPedidos);
 
         RegistrarP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/btnregistrar.png"))); // NOI18N
         RegistrarP.setBorderPainted(false);
@@ -191,6 +192,6 @@ public class XPedidos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jtPedidos;
     // End of variables declaration//GEN-END:variables
 }

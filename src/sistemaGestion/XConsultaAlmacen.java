@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sistemaGestion;
-
+import DataBase.TablaAlmacen;
 /**
  *
  * @author sevilla
@@ -16,6 +16,7 @@ public class XConsultaAlmacen extends javax.swing.JFrame {
      */
     public XConsultaAlmacen() {
         initComponents();
+        TablaAlmacen.mostrarTabla(jtAlmacen);
     }
 
     /**
@@ -29,14 +30,14 @@ public class XConsultaAlmacen extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtAlmacen = new javax.swing.JTable();
         Save = new javax.swing.JButton();
         Back = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtAlmacen.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -47,7 +48,7 @@ public class XConsultaAlmacen extends javax.swing.JFrame {
                 "ID Material", "Nombre", "Descripcion", "Tipo", "Cantidad"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtAlmacen);
 
         Save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/btnmodificar.png"))); // NOI18N
         Save.setBorderPainted(false);
@@ -166,6 +167,6 @@ public class XConsultaAlmacen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jtAlmacen;
     // End of variables declaration//GEN-END:variables
 }
